@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="controlapp.client.smartcar.com.smartcarcontroller2.fragment.JoystickFragment">
+
+
+    <Button
+        android:text="FRONT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="68dp"
+        android:id="@+id/frontBtn" />
+
+    <Button
+        android:text="BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frontBtn"
+        android:layout_alignEnd="@+id/frontBtn"
+        android:layout_marginTop="55dp"
+        android:id="@+id/backBtn" />
+
+    <Button
+        android:text="LEFT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frontBtn"
+        android:layout_toEndOf="@+id/backBtn"
+        android:layout_marginStart="131dp"
+        android:id="@+id/leftBtn" />
+
+    <Button
+        android:text="RIGHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/leftBtn"
+        android:layout_toEndOf="@+id/leftBtn"
+        android:layout_marginStart="52dp"
+        android:id="@+id/rightBtn" />
+</RelativeLayout>
